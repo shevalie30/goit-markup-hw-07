@@ -19,13 +19,13 @@
 .navigation-list,
 .gallery-list-filter,
 .list,
-.chip-list,
-.job-list,
-.team-list,
+.chip__list,
+.job__list,
+.team__list,
 .footer-list,
 .gallery-list,
-.social-list,
-.clients-list,
+.social,
+.clients__list,
 .footer-list-iconc {
   list-style: none;
 }
@@ -200,7 +200,7 @@ ul {
   background-image: linear-gradient(#2f303a66, #2f303a66), url(../img/hero/Img.jpg);
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -217,7 +217,7 @@ ul {
 
 /* кнопка стидия */
 
-.hero-btn {
+.hero__btn {
   display: inline-block;
   padding: 10px 32px;
   width: 200px;
@@ -237,8 +237,8 @@ ul {
   transition-timing-function: var(--timing-function);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   color: #ffe602;
 }
 
@@ -537,7 +537,272 @@ ul {
   background-color: #188ce8;
 }
 
+/* наши особиности */
+
+.chip {
+  padding-top: 94px;
+}
+
+.chip__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chip__iconc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.chip__item {
+  width: 270px;
+}
+
+.chip__item:last-child {
+  margin-right: 0;
+}
+
+.chip__title {
+  display: none;
+}
+
+.chip__item__title {
+  margin-bottom: 10px;
+}
+
+.chip__item__title {
+  font-weight: 700;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.chip__team {
+  font-size: var(--font-size);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--team-color);
+}
+
+/*  работа */
+
+.job {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.job__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.job__foto {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.job__item {
+  position: relative;
+}
+
+.job__item > .job__item__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--brand-color);
+
+  content: '';
+  width: 100%;
+  height: 70px;
+}
+
+/* команда */
+
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team__item__title {
+  margin-bottom: 10px;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item {
+  background-color: var(--brand-color);
+}
+
+.team__item__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.team__team {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--team-color);
+  margin-bottom: 16px;
+}
+
+.team__name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* иконки команды */
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--brand-color);
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: #2196f3;
+}
+
+.social__link:hover .social__iconc,
+.social__link:focus .social__iconc {
+  fill: var(--brand-color);
+}
+
+.social__iconc {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+
+/* постоянные клиенты */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition-property: border;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  outline: transparent;
+}
+
+.clients__link:hover .clients__iconc,
+.clients__link:focus .clients__iconc {
+  fill: #2196f3;
+}
+
+.clients__iconc {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  border-color: #2196f3;
+}
+
 /* кнопка галиреи */
+
+.gallery-title-btn {
+  display: none;
+}
 
 .gallery-btn-aktiv {
   padding: 6px 22px 6px 22px;
@@ -698,260 +963,6 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--team-color);
-}
-
-/* наши особиности */
-
-.chip {
-  padding-top: 94px;
-}
-
-.chip-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.chip-iconc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.chip-item {
-  width: 270px;
-}
-
-.chip-item:last-child {
-  margin-right: 0;
-}
-
-.chip-title,
-.gallery-title-btn {
-  display: none;
-}
-
-.chip-item-title {
-  margin-bottom: 10px;
-}
-
-.chip-item-title {
-  font-weight: 700;
-  font-size: var(--font-size);
-  line-height: var(--line-height);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.chip-team {
-  font-size: var(--font-size);
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--team-color);
-}
-
-/*  работа */
-
-.job {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.job-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.job-title,
-.team-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.job-foto {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.job-item {
-  position: relative;
-}
-
-.job-item > .job-item-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: var(--brand-color);
-
-  content: '';
-  width: 100%;
-  height: 70px;
-}
-
-/* команда */
-
-.team {
-  background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.team-item-title {
-  margin-bottom: 10px;
-}
-
-.team-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.team-item {
-  background-color: var(--brand-color);
-}
-
-.team-item-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-}
-
-.team-team {
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--team-color);
-  margin-bottom: 16px;
-}
-
-/* иконки команды */
-
-.social-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  background-color: var(--brand-color);
-  border-radius: 50%;
-  transition-property: background-color;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
-}
-
-.social-link:hover,
-.social-link:focus {
-  background-color: #2196f3;
-}
-
-.social-link:hover .social-iconc,
-.social-link:focus .social-iconc {
-  fill: var(--brand-color);
-}
-
-.social-iconc {
-  fill: #afb1b8;
-  transition-property: fill;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
-}
-
-.team-name {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-/* постоянные клиенты */
-
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.clients-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 50px;
-}
-
-.clients-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.clients-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.clients-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  transition-property: border;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
-
-  outline: transparent;
-}
-
-.clients-link:hover .clients-iconc,
-.clients-link:focus .clients-iconc {
-  fill: #2196f3;
-}
-
-.clients-iconc {
-  fill: #afb1b8;
-  transition-property: fill;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  border-color: #2196f3;
 }
 
 /* подвал */
