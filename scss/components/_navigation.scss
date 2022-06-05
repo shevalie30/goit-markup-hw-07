@@ -30,7 +30,7 @@
 
 .navigation-link:hover,
 .navigation-link:focus {
-    color: #2196f3;
+    color: var(--element-color);
 }
 
 .navigation-link-activ {
@@ -42,7 +42,7 @@
     line-height: var(--line-height);
     letter-spacing: var(--letter-spacing);
     text-decoration: var(--text-decoration);
-    color: #2196f3;
+    color: var(--element-color);
 
     transition-property: color;
     transition-duration: var(--duration);
@@ -58,6 +58,6 @@
     width: 100%;
     height: 4px;
 
-    background-color: #2196f3;
+    background-color: var(--element-color);
     border-radius: 2px;
 }
