@@ -41,9 +41,9 @@
     outline: transparent;
 
     &:hover,
-        &:focus {
-            border-color: var(--element-color);
-        }
+    &:focus {
+        border-color: var(--element-color);
+    }
 }
 
 .clients-list__link:hover .clients-list__iconc,

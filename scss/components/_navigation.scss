@@ -26,12 +26,13 @@
     transition-property: color;
     transition-duration: var(--duration);
     transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--element-color);
+    }
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
-    color: var(--element-color);
-}
 
 .navigation-link-activ {
     position: relative;

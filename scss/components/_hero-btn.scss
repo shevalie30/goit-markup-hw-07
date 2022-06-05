@@ -16,9 +16,10 @@
     transition-property: color;
     transition-duration: var(--duration);
     transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: #ffe602;
+    }
 }
 
-.hero__btn:hover,
-.hero__btn:focus {
-    color: #ffe602;
-}

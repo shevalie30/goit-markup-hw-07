@@ -52,6 +52,11 @@
     transition-property: border;
     transition-duration: var(--duration);
     transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+        border: 1px solid #2196f3;
+    }
 }
 
 .close-iconc {
@@ -66,10 +71,7 @@
     fill: #2196f3;
 }
 
-.close-btn:hover,
-.close-btn:focus {
-    border: 1px solid #2196f3;
-}
+
 
 .model-title {
     display: block;
@@ -96,12 +98,13 @@
     transition-property: border;
     transition-duration: var(--duration);
     transition-timing-function: var(--timing-function);
-}
 
-.model-input:hover,
-.model-input:focus {
+    &:hover,
+&:focus {
     border: 1px solid #2196f3;
 }
+}
+
 
 .model-tex {
     width: 100%;
@@ -112,21 +115,24 @@
     transition-property: border;
     transition-duration: var(--duration);
     transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+        border: 1px solid #2196f3;
+    }
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: var(--line-height);
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
-.model-tex::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: var(--line-height);
-    letter-spacing: 0.01em;
 
-    color: rgba(117, 117, 117, 0.5);
-}
 
-.model-tex:hover,
-.model-tex:focus {
-    border: 1px solid #2196f3;
-}
+
 
 .user-info {
     position: relative;
@@ -154,6 +160,11 @@
     transition-property: fill;
     transition-duration: var(--duration);
     transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+        fill: #2196f3;
+    }
 }
 
 .model-input:hover+.model-iconc,
@@ -161,10 +172,7 @@
     fill: #2196f3;
 }
 
-.model-iconc:hover,
-.model-iconc:focus {
-    fill: #2196f3;
-}
+
 
 .input {
     display: block;
@@ -281,12 +289,13 @@
     transition-property: color, border-radius, border;
     transition-duration: var(--duration);
     transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: #ffe602;
+        border: 1px solid #2196f3;
+        border-radius: 0;
+        background-color: #188ce8;
+    }
 }
 
-.submit-btn:hover,
-.submit-btn:focus {
-    color: #ffe602;
-    border: 1px solid #2196f3;
-    border-radius: 0;
-    background-color: #188ce8;
-}
